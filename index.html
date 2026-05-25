@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-card">
+        <h1>Прогноз погоди 🌤️</h1>
+            
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Введи назву міста (напр. Kyiv)">
+            <button id="search-btn">Знайти</button>
+        </div>
+
+        <div id="weather-info" class="weather-info" style="display: none;">
+            <h2 id="city-name">Київ</h2>
+            <img id="weather-icon" src="" alt="Іконка погоди" style="width: 100px; display: none; margin: 0 auto;">
+            <p class="temperature" id="temp">25°C</p>
+            <p class="description" id="desc">Сонячно</p>
+            
+            <div class="weather-details">
+                <div class="detail-box">
+                    <span class="detail-title">Відчувається</span>
+                    <span class="detail-value" id="feels-like">--</span>
+                </div>
+                <div class="detail-box">
+                    <span class="detail-title">Вологість</span>
+                    <span class="detail-value" id="humidity">--</span>
+                </div>
+                <div class="detail-box">
+                    <span class="detail-title">Вітер</span>
+                    <span class="detail-value" id="wind">--</span>
+                </div>
+            </div>
+        </div>
+        
+        <p id="error-msg" class="error-msg"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
